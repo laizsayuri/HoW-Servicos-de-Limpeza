@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Login - HoW</title>
+    <link rel="stylesheet" href="Content/style.css">
+    <link rel="stylesheet" href="Content/fontawesome-free-5.15.4-web/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">        
+</head>
+
+<body>
+    <!-- barra de navegação -->
+    <nav class="navbar navbar-expand">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" style="color:#01758C; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: x-large; font-weight: bold;">IClean</a>
+          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+              <a type="button" href="index.html" class="btn btn-outline-primary" style="color:#01758C">Voltar</a>              
+            </div>
+          </div>
+        </div>
+    </nav>
+
+
+    <!-- seção login/cadastro -->
+    <div class="login row">
+        <div class="col-12 col-md-6 p-5">
+            <div class="px-5">
+                <h3 style="font-weight: bold;">Já possui cadastro?</h3>
+                <div class="my-3">
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                        <label class="form-check-label" for="flexRadioDefault1">
+                        Sou cliente
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                        <label class="form-check-label" for="flexRadioDefault2">
+                        Sou prestador(a) de serviços
+                        </label>
+                    </div>
+                </div>
+                
+        
+                <form>
+                    <div class="form-group">
+                    <label for="exampleInputEmail1" style="font-weight: bold;">Email</label>
+                    <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp" placeholder="Digite seu email">
+                    <small id="emailHelp" class="form-text text-muted">Nunca compartilharemos seu e-mail com mais ninguém.</small>
+                    </div>
+                    <div class=" form-group">
+                    <label for="exampleInputPassword1" style="font-weight: bold;">Senha</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1" placeholder="Digite sua senha">
+                    <div class="text-center">
+                        <p>Esqueceu a senha? <a class="senha" href="#esqueceu-senha">Clique aqui</a></p>
+                    </div>                  
+                    </div>
+                    <a type="button" class="btn w-100 mb-2" style="color: black; font-weight:bold; background-image: linear-gradient(180deg, #1BCEF1 0%, #01758C 100%); box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 3px;">Entrar</a>
+                    <a type="button" href="cadastro-cliente.html" class="btn w-100" style="background-color:#EB7711; color: black; font-weight: bold; background-image: linear-gradient(180deg, #F6C396 0%, #EB7711 100%); box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 3px;">Não possui conta? CADASTRE-SE</a>
+                </form>
+            </div>            
+        </div>
+
+        <div class="col-6 d-none d-md-block p-3 text-center">
+            <img class="img-login" src="Content/imagens/imagem-login.png" alt="desenho homem faxineiro">
+        </div>
+    </div>
+    
+
+
+    <!-- seção rodapé -->
+
+    <div class="rodape row px-5 py-5" style="background-color: #e8e5d2;">
+        <div class="redes-sociais col-6 ps-0 ps-lg-5" style="color: #01758C;">
+            <h6 style="font-weight: bold;">Siga nossas redes sociais</h6>
+            </br>
+            <div class="d-flex align-items-center">
+                <i class="fab fa-facebook"></i>
+                <p>facebook/IClean</p>
+            </div>
+            <div class="d-flex align-items-center">
+                <i class="fab fa-instagram"></i>
+                <p>@IClean</p>
+            </div>            
+        </div>
+
+        <div class="col-6" style="color:#EB7711;">
+            <h6 style="font-weight: bold;">Trabalho HoW VII</h6>
+            </br>
+            <p>Desenvolvido por alunos de Análise e desenvolvimento de sistemas- UNIVALI/2021</br>
+            <p>Deise Andrade</br>
+            Elias Jr.</br>
+            Enza Machado</br>
+            Laíz Sayuri</p>
+        </div>
+    </div>
+</body>

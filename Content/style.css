@@ -1,0 +1,104 @@
+.home{
+    height: 375px; 
+    background-color:#e8e5d2;
+    background-image: url("home.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: auto;    
+}
+
+.navbar{
+    background-color: #e8e5d2;
+}
+
+.navbar, .home, .secao-branca, .login{
+    color: #01758C;
+
+}
+
+.fas{
+    font-size: 30px;
+}
+
+.card{
+    border-radius: 15px !important;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.15);
+}
+
+.avaliacoes img{
+    border-radius: 100%;
+    height: 80px;
+    object-fit: cover;
+    width: 80px;  
+}
+
+.experiencias p{
+    margin-top: 10px;
+    margin-left: 15px;
+    margin-bottom: 1rem;
+    font-size: 15px;
+    color: white;
+}
+
+.avaliacoes h2{
+    color: white;
+}
+
+.avaliacao p{
+    color: white;
+    font-size: 15px;
+    margin-left: 15px;
+    margin-top: 10px;
+    margin-bottom: 3rem;
+}
+
+.voltar a{
+    color:#696969;
+    font-style: inherit;
+    text-decoration:none;
+    font-weight: bold;
+}
+
+.rodape i {
+    font-size: 60px;
+}
+
+.redes-sociais p{
+    margin-top: 5px;
+    margin-left: 10px;
+}
+
+.redes-sociais i{
+    margin-left: 5px;
+    margin-bottom: 15px;
+}
+
+.img-login{
+    width: 70%;
+}
+
+.cadastro-cliente input{
+    background-color: #01758C;
+    color: white;
+}
+
+.seta-proximo{
+    width: 120px;
+    cursor: pointer;
+    filter: invert(1);    
+}
+
+.seta-proximo:hover{
+    filter: invert(0.75);
+}
+
+.checkbox-formulario{
+    margin-left: 12px;
+}
+
+.formulario-preto{      
+    background-color: rgba(0, 0, 0, 0.6);    
+    border-radius: 20px;
+    margin-top: 30px !important;
+    padding-bottom: 30px;
+}
