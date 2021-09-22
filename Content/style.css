@@ -111,7 +111,36 @@
 .corpo-agendamento{
     background: #F3EFE5;
     width: 100%;
-    height: 230px;
+}
+
+.aba-historico, .aba-avaliacao, .aba-agendamento{
+    background-color:#F3EFE5;
+    font-weight: bold;
+    border: solid black 1px;
+}
+
+.aba-historico, .aba-avaliacao, .aba-agendamento{
+    background-color:#F3EFE5;
+    font-weight: bold;
+    border: solid black 1px;
+}
+
+.aba-seleciona-hist{
+    background-color: whitesmoke;
+    box-shadow: 5px 5px 10px #888888;
+}
+
+.abas-prestador{
+    max-width: 100%;
+    margin-left: 0 !important;
+}
+
+.aba-historico:hover, .aba-avaliacao:hover, .aba-agendamento:hover{
+    cursor: pointer;
+    color: white;
+    background-color:#696969;
+    font-weight: bold;
+    border: solid black 1px;
 }
 
 .img-prestador{
@@ -119,4 +148,14 @@
     height: 115px;
     object-fit: cover;
     width: 115px;  
+}
+
+.btn-nav{
+    color: #01758C !important;
+    border:#01758C solid 0.5px !important;    
+}
+
+.btn-nav:hover{
+    background-color:#01758C;
+    color: white !important;
 }
