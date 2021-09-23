@@ -56,7 +56,11 @@
     color:#696969;
     font-style: inherit;
     text-decoration:none;
-    font-weight: bold;
+    font-weight: bold;    
+}
+
+.voltar a:hover{
+    color: #888888;
 }
 
 .rodape i {
@@ -159,3 +163,4 @@
     background-color:#01758C;
     color: white !important;
 }
+
