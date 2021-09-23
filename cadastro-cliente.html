@@ -135,7 +135,7 @@
             <div id="cadastro-concluido" class="cadastro-cliente row" style="display: none;">
                 <h3 class="text-center text-white mt-3">CADASTRO CONCLUÍDO</h3>          
                 <div class="col-12 p-3 d-flex justify-content-center align-items-center">
-                    <img class="seta-proximo" src="Content/imagens/seta-proximo.png" alt="seta indicando avanço">
+                    <img class="seta-proximo" onclick="redirecionaAreaCliente()" src="Content/imagens/seta-proximo.png" alt="seta indicando avanço">
                 </div>
                 <h4 class="text-center text-white">Ir para minha área de cliente</h4>
             </div>
@@ -219,6 +219,10 @@
                 $("#barra").css('width','70%');
                 $("#seta").show();
             }
+        }
+         
+        function redirecionaAreaCliente(){
+            return window.location.href = "agendamento-cliente.html";
         }
     </script>
 
