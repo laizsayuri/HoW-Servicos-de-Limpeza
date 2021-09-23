@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">    
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-    <title>Área do prestador - HoW</title>
+    <title>Área do cliente - HoW</title>
     <link rel="stylesheet" href="Content/style.css">
     <link rel="stylesheet" href="Content/fontawesome-free-5.15.4-web/css/all.css">
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
@@ -18,11 +18,11 @@
     <nav class="navbar navbar-expand">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html" style="color:#01758C; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: x-large; font-weight: bold;">IClean</a>
-          <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
-            <div class="navbar-nav">
-              <a type="button" id="botao-index" href="login.html" class="btn btn-nav">Voltar</a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a type="button" id="botao-index" href="login.html" class="btn btn-nav">Voltar</a>
+                </div>
             </div>
-          </div>
         </div>
     </nav>
 
@@ -31,17 +31,23 @@
         <div class="row">
             <div class="col-12 col-lg-6 d-flex flex-column justify-content-center">   
                 <div class="col-12 d-flex justify-content-start ps-2 pb-5">
-                    <img class="img-prestador" src="Content/imagens/prestador-perfil-3.jpeg" alt="homem olhando paisagem">
-                    <h4 class="ms-3 mt-5" style="font-weight: bold; color: #01758C">Olá prestador,</h4>                                        
+                    <img class="img-prestador" src="Content/imagens/perfil-2.jpeg" alt="homem olhando paisagem">
+                    <h4 class="ms-3 mt-5" style="font-weight: bold; color: #01758C">Olá cliente,</h4>                                     
                 </div>
 
                 <div class="col-12">
                     <div class="cabecalho-agendamento text-center text-white py-1 px-3">
                         Selecione a data no calendário para visualizar seus agendamentos
                     </div>
-                    <div class="corpo-agendamento px-1 pb-5">
-                        nenhuma data selecionada
+                    <div class="corpo-agendamento px-1">
+                        <div>nenhuma data selecionada</div>
+                        <div class="mt-5">
+                            <a type="button" href="" id="novo-agendamento" class="btn-novo" style="text-decoration: none; color:#696969; font-weight: bold;">
+                                <i class="fas fa-plus-circle" style="font-size: 15px; color:#696969;"></i> NOVO AGENDAMENTO
+                            </a>
+                        </div>                        
                     </div>
+                    
                 </div>
                 
             </div>
@@ -67,10 +73,8 @@
             <div id="msgAbaSelecionada" class="aba-seleciona-hist mt-2 p-2">
                 nenhum histórico disponível
             </div>
-        </div>                             
-        
+        </div>    
     </div>
-
 
     <!-- seção voltar ao incio -->
 
@@ -118,5 +122,6 @@
             document.getElementById("msgAbaSelecionada").innerHTML = "nenhum agendamento disponível";
         }
     </script>
+
 
 </body>

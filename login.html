@@ -60,7 +60,7 @@
                         <p>Esqueceu a senha? <a class="senha" href="#esqueceu-senha">Clique aqui</a></p>
                     </div>                  
                     </div>
-                    <a type="button" class="btn w-100 mb-2" style="color: black; font-weight:bold; background-image: linear-gradient(180deg, #1BCEF1 0%, #01758C 100%); box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 3px;">Entrar</a>
+                    <a type="button" id="btn-entrar" class="btn w-100 mb-2" onclick="btnEntrar()" style="color: black; font-weight:bold; background-image: linear-gradient(180deg, #1BCEF1 0%, #01758C 100%); box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 3px;">Entrar</a>
                     <a type="button" href="cadastro-cliente.html" class="btn w-100" style="background-color:#EB7711; color: black; font-weight: bold; background-image: linear-gradient(180deg, #F6C396 0%, #EB7711 100%); box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); border-radius: 3px;">Não possui conta? CADASTRE-SE</a>
                 </form>
             </div>            
@@ -99,4 +99,24 @@
             Laíz Sayuri</p>
         </div>
     </div>
+
+    <script>
+        function getTipo(){
+            if($("#flexRadioDefault1").prop("checked")){
+                return 'cliente';
+            }else{
+                return 'prestador';
+            }
+        }
+
+        function btnEntrar(){
+            if(getTipo() == 'cliente'){
+                return window.location.href = "agendamento-cliente.html";
+            }
+            else{
+                return window.location.href = "agendamento-prestador.html";
+            }
+        }
+        
+    </script>
 </body>
