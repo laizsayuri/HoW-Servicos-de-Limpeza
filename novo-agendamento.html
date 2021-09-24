@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Área do cliente - HoW</title>
+    <link rel="stylesheet" href="Content/style.css">
+    <link rel="stylesheet" href="Content/fontawesome-free-5.15.4-web/css/all.css">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">        
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <!-- barra de navegação -->
+    <nav class="navbar navbar-expand">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="index.html" style="color:#01758C; font-family: Verdana, Geneva, Tahoma, sans-serif; font-size: x-large; font-weight: bold;">IClean</a>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav">
+                    <a type="button" id="botao-index" href="agendamento-cliente.html" class="btn btn-nav">Voltar</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Título boas vindas -->
+    <div class="p-5">
+        <div class="d-flex justify-content-start mb-5">
+            <img class="img-cliente" src="Content/imagens/perfil-2.jpeg" alt="mulher idosa bebendo água">
+            <h4 class="ms-3 mt-5" style="font-weight: bold; color: #01758C">Olá cliente,</h4>                                     
+        </div>
+    
+        <!-- seção novo agendamento-->
+        <div class="row">
+            <div class="col-12 col-md-4 mb-3 mb-md-0">            
+                <img class="img-fluid" src="Content/imagens/calendario-setembro.jpg" alt="calendário do mês de Setembro">                
+            </div>
+    
+            <div class="col-12 col-md-8 ms-0 ms-md-2 row form-novo-agendamento text-white">    
+                <div class="mt-4">
+                    <span class="me-3 mt-3">Escolha o horário:</span>
+                    <div class="my-3">
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault1" checked>
+                            <label class="form-check-label" for="flexRadioDefault1">
+                            Manhã
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                            Tarde
+                            </label>
+                        </div>
+                        <div class="form-check form-check-inline">
+                            <input class="form-check-input" type="radio" name="flexRadioDefault" id="flexRadioDefault2">
+                            <label class="form-check-label" for="flexRadioDefault2">
+                            Integral
+                            </label>
+                        </div>
+                    </div>    
+                </div>                
+                
+                <div class="row">
+                    <label class="mb-2">Selecione os serviços a serem prestados: <br></label>
+                    <div class="checkbox-formulario">
+                        <div class="row">
+                            <div class="form-check form-check-inline col-md-3 col-12">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox1" value="option1">
+                                <label class="form-check-label" for="inlineCheckbox1">Escritórios</label>
+                            </div>
+                            <div class="form-check form-check-inline col-md-3 col-12">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                                <label class="form-check-label" for="inlineCheckbox2">Consultórios</label>
+                            </div>
+                            <div class="form-check form-check-inline col-md-3 col-12">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option3">
+                                <label class="form-check-label" for="inlineCheckbox2">Lojas</label>
+                            </div>
+                        </div>
+                        
+                        <div class="row">
+                            <div class="form-check form-check-inline col-md-3 col-12">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option4">
+                                <label class="form-check-label" for="inlineCheckbox2">Casas</label>
+                            </div>
+                            <div class="form-check form-check-inline col-md-3 col-12">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option5">
+                                <label class="form-check-label" for="inlineCheckbox2">Apartamentos</label>
+                            </div>
+                            <div class="form-check form-check-inline col-md-3 col-12">
+                                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option5">
+                                <label class="form-check-label" for="inlineCheckbox2">Áreas de festa</label>
+                            </div>
+                        </div>                            
+                    </div>                        
+                </div> 
+                
+                
+                <div class="row mb-2 mb-md-0">
+                    <div class="col-12 col-md-10 d-inline mt-4">
+                        <label class="col-12 col-md-4">Selecione o prestador: </label>
+                        <select class="col-12 col-md-6">                            
+                            <option selected>Antonia Silva</option>
+                            <option value="1">Carlos Prado</option>
+                            <option value="2">Junior Menezes</option>
+                            <option value="3">Letícia Santos</option>                           
+                        </select>
+                    </div>  
+                    <a class="btn btn-agenda col-12 col-md-2 mb-3 mb-md-0 ms-2 ms-md-0 d-flex justify-content-center align-items-center mt-4" href="agendamento-cliente.html" role="button">AGENDAR</a>                        
+                </div>
+                                                      
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <!-- seção voltar ao incio -->
+
+    <div class="voltar text-center pt-2 pb-2" style="background-color:#e8e5d2">
+        <a href="index.html">Voltar ao início</a>
+    </div>
+
+    <!-- seção rodapé -->
+
+    <div class="rodape row px-5 py-5" style="background-color: whitesmoke;">
+        <div class="redes-sociais col-6 ps-0 ps-lg-5" style="color: #01758C;">
+            <h6 style="font-weight: bold;">Siga nossas redes sociais</h6>
+            </br>
+            <div class="d-flex align-items-center">
+                <i class="fab fa-facebook"></i>
+                <p>facebook/IClean</p>
+            </div>
+            <div class="d-flex align-items-center">
+                <i class="fab fa-instagram"></i>
+                <p>@IClean</p>
+            </div>            
+        </div>
+
+        <div class="col-6" style="color:#EB7711;">
+            <h6 style="font-weight: bold;">Trabalho HoW VII</h6>
+            </br>
+            <p>Desenvolvido por alunos de Análise e desenvolvimento de sistemas- UNIVALI/2021</br>
+            <p>Deise Andrade</br>
+            Elias Jr.</br>
+            Enza Machado</br>
+            Laíz Sayuri</p>
+        </div>
+    </div>
+</body>
